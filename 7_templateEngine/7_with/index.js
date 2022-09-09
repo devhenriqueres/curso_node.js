@@ -1,0 +1,55 @@
+const express = require('express')
+const exphbs = require('express-handlebars')
+
+const app = express()
+
+app.engine('handlebars', exphbs.engine())
+app.set('view engine', 'handlebars')
+
+app.get('/', (req, res) => {
+
+    const user = {
+        name: 'Henrique Jamal',
+        surname: 'Resende',
+        age: '19'
+    }
+
+    const auth = true
+
+    const approved = false
+
+    res.render('home', {
+        user: user,
+        auth,
+        approved
+    })
+
+})
+
+app.get('/dashboard', (req, res) => {
+
+    const items = ['itam a', 'item b', 'item c', 'imtem d']
+    res.render('dashboard', {
+        items: items
+    })
+
+})
+
+app.get('/postagens', (req, res) => {
+
+    const post = {
+
+        title: 'Aprender NodeJS',
+        category: 'javascript',
+        body: 'Este artigo vai te ajudar a aprender nodeJS...',
+        comments: 4
+
+    }
+
+    res.render('blogpost', {
+        post: post
+    })
+
+})
+
+app.listen(3000, () => console.log('App rodando na porta 3000'))

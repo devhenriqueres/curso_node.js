@@ -1,0 +1,11 @@
+<h1>Livros publicados</h1>
+
+<div class="books-container">
+    {{#each books}}
+        <div>
+            #{{this.id}} <span class="bold"><a href="/books/{{this.id}}">{{this.title}}</a></span> 
+            - {{this.pageqtd}} páginas
+        </div>
+    {{/each}}
+</div>
+<div class="link"><a href="/" class="link">Voltar</a></div>

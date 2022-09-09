@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(231, 231, 231);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+
+main{
+    width: 300px;
+    height: auto;
+    background-color: rgb(121, 85, 121);
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: yellow;
+}

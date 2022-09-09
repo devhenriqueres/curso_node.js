@@ -1,0 +1,10 @@
+<main>
+    <h1>Veja nossos produtos: </h1>
+    <ul>
+        {{#each produtos}}
+            <li>{{this.id}} <br>{{this.name}} <br> {{this.value}} </li>
+            <a href="/product/{{this.id}}">Ver mais</a>
+            <br>
+        {{/each}}
+    </ul>
+</main>

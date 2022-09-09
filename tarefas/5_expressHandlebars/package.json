@@ -1,0 +1,17 @@
+{
+  "name": "5_expresshandlebars",
+  "version": "1.0.0",
+  "description": "Tarefa 05 do curso de NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 3000"
+  },
+  "author": "Henrique Jamal Resende",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "nodemon": "^2.0.15"
+  }
+}
